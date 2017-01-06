@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="enable_if_limited.h">
+    <ClInclude Include="enable_if_examples.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
