@@ -146,10 +146,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="enable_if_examples.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="template_specialization.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="enable_if_examples.h" />
+    <ClInclude Include="template_specialization.h" />
+    <ClInclude Include="tpl_fucn_spec_and_overload.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

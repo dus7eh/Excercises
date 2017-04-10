@@ -18,9 +18,21 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="template_specialization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enable_if_examples.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="enable_if_examples.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="template_specialization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tpl_fucn_spec_and_overload.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
