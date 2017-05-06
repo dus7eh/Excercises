@@ -13,18 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Pimpl">
+      <UniqueIdentifier>{dbbbf5b8-1020-4901-bede-6795bbeded7b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pimpl\car.h">
+      <Filter>Pimpl</Filter>
+    </ClInclude>
+    <ClInclude Include="Pimpl\car_impl.h">
+      <Filter>Pimpl</Filter>
+    </ClInclude>
+    <ClInclude Include="Pimpl\car_types.h">
+      <Filter>Pimpl</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="return_type_deduction.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="trival_pod_aggregates.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="Pimpl\car.cpp">
+      <Filter>Pimpl</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

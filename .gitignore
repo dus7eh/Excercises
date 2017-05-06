@@ -2,3 +2,6 @@
 Debug
 *.sdf
 *.opensdf
+Release
+*.opendb
+*.db

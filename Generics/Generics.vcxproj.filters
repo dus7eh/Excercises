@@ -35,5 +35,8 @@
     <ClInclude Include="tpl_fucn_spec_and_overload.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="tpl_func_spec_value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

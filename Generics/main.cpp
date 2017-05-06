@@ -7,6 +7,7 @@
 #include "enable_if_examples.h"
 #include "template_specialization.h"
 #include "tpl_fucn_spec_and_overload.h"
+#include "tpl_func_spec_value.h"
 
 void run_template_specialization()
 {
@@ -36,29 +37,28 @@ void run_template_func_specialization()
     util_tpl_specialization::func_spec_wrapped(&value);
 }
 
-struct TestStruct
+void run_template_func_value_spacialization()
 {
-    TestStruct() : field_a(5), field_b(6) {}
+    using namespace util_tpl_specialization;
+    process<RunType::One>();
+    process<RunType::Two>();
+    process<RunType::Three>();
 
-    int field_a;
-    char field_b;
-};
+    auto type = RunType::Two;
+    //process<type>();          // this is not a compile time constant: Error!
+
+    constexpr auto ct_type = RunType::Two;
+    process<ct_type>();          // this is a compile time constant: OK!
+}
 
 
 
-#include <algorithm>
-#include <array>
 int main()
 {
     util_tpl::run_enable_if();
     run_template_specialization();
     run_template_func_specialization();
-
-    TestStruct t0;
-    TestStruct t1{};
-    TestStruct t2 = TestStruct();
-    TestStruct *t3 = new TestStruct;
-    TestStruct *t4 = new TestStruct();
+    run_template_func_value_spacialization();
 
     return 0;
 }
